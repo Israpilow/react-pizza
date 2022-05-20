@@ -12,8 +12,8 @@ function App() {
       <div className="wrapper">
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path={process.env.PUBLIC_URL + '/'} element={<Home />} />
+          <Route path={process.env.PUBLIC_URL + '/'} element={<Cart />} />
         </Routes>
       </div>
     </div>

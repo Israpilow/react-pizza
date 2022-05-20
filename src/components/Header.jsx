@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className="header">
       <div className="container">
-        <Link to="/">
+        <Link to={process.env.PUBLIC_URL + '/'}>
           <div className="header__logo">
             <img width="38" src={logoSvg} alt="Pizza logo" />
             <div>
@@ -20,7 +20,7 @@ function Header() {
         </Link>
 
         <div className="header__cart">
-          <Link to="/cart">
+          <Link to={process.env.PUBLIC_URL + '/cart'}>
             <div className="button button--cart">
               <span>{totalPrice} ₽</span>
               <div className="button__delimiter"></div>
