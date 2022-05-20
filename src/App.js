@@ -13,7 +13,7 @@ function App() {
         <Header />
         <Routes>
           <Route path={process.env.PUBLIC_URL + '/'} element={<Home />} />
-          <Route path={process.env.PUBLIC_URL + '/'} element={<Cart />} />
+          <Route path={process.env.PUBLIC_URL + '/cart'} element={<Cart />} />
         </Routes>
       </div>
     </div>
