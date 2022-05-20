@@ -8,7 +8,7 @@ export const setPizzas = (items) => ({
 export const fetchPizzas = (category, sortBy) => (dispatch) => {
   axios
     .get(
-      `/pizzas?${category !== null ? `category=${category}` : ''}&_sort=${sortBy.type}&_order=asc`,
+      `/pizzas?${category !== null ? `category=${category}` : ''}&sortBy=${sortBy.type}&_order=asc`,
     )
     .then(({ data }) => {
       dispatch(setPizzas(data));

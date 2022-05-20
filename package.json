@@ -39,7 +39,7 @@
       "react-app/jest"
     ]
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "https://62877047e9494df61b38ebfa.mockapi.io",
   "browserslist": {
     "production": [
       ">0.2%",
