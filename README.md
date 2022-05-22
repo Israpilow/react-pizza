@@ -6,7 +6,7 @@ Stack:
 - React Router
 - Redux
 - Redux thunk
-- json-server
+- MockApi
 - Axios
 - classnames
 - Link to sait: https://israpilow.github.io/react-pizza
