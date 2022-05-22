@@ -6,6 +6,7 @@ Stack:
 - React Router
 - Redux
 - Redux thunk
+- React Skeleton
 - MockApi
 - Axios
 - classnames
