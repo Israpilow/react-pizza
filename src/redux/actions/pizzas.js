@@ -6,6 +6,7 @@ export const setPizzas = (items) => ({
 });
 
 export const fetchPizzas = (category, sortBy) => (dispatch) => {
+  dispatch(setLoaded(false));
   axios
     .get(
       `https://62877047e9494df61b38ebfa.mockapi.io/pizzas?${
@@ -16,5 +17,10 @@ export const fetchPizzas = (category, sortBy) => (dispatch) => {
       dispatch(setPizzas(data));
     });
 };
+
+export const setLoaded = (payload) => ({
+  type: 'SET_LOADED',
+  payload,
+});
 
 export default fetchPizzas;

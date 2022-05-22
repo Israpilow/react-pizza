@@ -23,6 +23,7 @@ function Home() {
 
   const items = useSelector(({ pizzas }) => pizzas.items);
   const cartItems = useSelector(({ cart }) => cart.items);
+  const isLoaded = useSelector(({ pizzas }) => pizzas.isLoaded);
   const { category, sortBy } = useSelector(({ filters }) => filters);
 
   React.useEffect(() => {
@@ -58,7 +59,7 @@ function Home() {
           {category !== null ? catigoriesItems[category] : 'Все пиццы'}
         </h2>
         <div className="content__items">
-          {items.length > 1
+          {isLoaded
             ? items.map((item) => {
                 return (
                   <PizzaBlock
