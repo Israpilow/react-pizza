@@ -8,7 +8,8 @@ import { setAddPizza } from '../redux/actions/cart';
 
 import Categories from '../components/Categories';
 import SortPopup from '../components/SortPopup';
-import PizzaBlock from '../components/PizzaBlock';
+import PizzaBlock from '../components/PizzaBlock/PizzaBlock';
+import LoadingBlock from '../components/PizzaBlock/LoadingBlock';
 
 const catigoriesItems = ['Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
 const sortItems = [
@@ -57,16 +58,18 @@ function Home() {
           {category !== null ? catigoriesItems[category] : 'Все пиццы'}
         </h2>
         <div className="content__items">
-          {items.map((item) => {
-            return (
-              <PizzaBlock
-                onCartItems={cartItems[item.id] && cartItems[item.id].items.length}
-                onAddToPizza={onAddToPizza}
-                {...item}
-                key={item.id}
-              />
-            );
-          })}
+          {items.length > 1
+            ? items.map((item) => {
+                return (
+                  <PizzaBlock
+                    onCartItems={cartItems[item.id] && cartItems[item.id].items.length}
+                    onAddToPizza={onAddToPizza}
+                    {...item}
+                    key={item.id}
+                  />
+                );
+              })
+            : Array(10).fill(<LoadingBlock />)}
         </div>
       </div>
     </div>

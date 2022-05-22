@@ -1,0 +1,22 @@
+[
+  {
+    "imgUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+    "title": "Чизбургер-пицца",
+    "price": 395
+  },
+  {
+    "imgUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/45e50d71297c411bbe1f37f506f9ab18_1875x1875.jpeg",
+    "title": "Домашняя",
+    "price": 450
+  },
+  {
+    "imgUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/89eae7cceb034829aee7f52803b4df30_1875x1875.jpeg",
+    "title": "Классическая",
+    "price": 289
+  },
+  {
+    "imgUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/5630c6ed3f394c7ba25e1ef79a67b7ee_1875x1875.jpeg",
+    "title": "Ветчина и сыр",
+    "price": 299
+  }
+]

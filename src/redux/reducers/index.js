@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 
 import filters from './filters';
 import pizzas from './pizzas';
-import cart from './cart';
+import cart from './cart-test';
 
 const rootReducer = combineReducers({
   filters,
