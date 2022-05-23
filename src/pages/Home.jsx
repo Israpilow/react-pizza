@@ -70,7 +70,9 @@ function Home() {
                   />
                 );
               })
-            : Array(10).fill(<LoadingBlock />)}
+            : Array(10)
+                .fill(0)
+                .map((item, index) => <LoadingBlock key={`${item}_${index}`} />)}
         </div>
       </div>
     </div>
