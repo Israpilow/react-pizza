@@ -7,6 +7,7 @@ Stack:
 - Redux
 - Redux thunk
 - React Skeleton
+- PropTypes
 - MockApi
 - Axios
 - classnames
